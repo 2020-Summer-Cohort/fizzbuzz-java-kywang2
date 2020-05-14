@@ -24,7 +24,6 @@ public class FizzBuzzTest {
         FizzBuzz underTest = new FizzBuzz();
     }
 
-
     @Test
     public void oneShouldSayOne() {
         //arrangement
@@ -72,20 +71,56 @@ public class FizzBuzzTest {
     public void sevenShouldSaySeven(){
         FizzBuzz underTest = new FizzBuzz();
         String result = underTest.say(7);
-        assertEquals(7, result);
+        assertEquals("7", result);
     }
 
     @Test
     public void eightShouldSayEight(){
         FizzBuzz underTest = new FizzBuzz();
         String result = underTest.say(8);
-        assertEquals(8, result);
+        assertEquals("8", result);
     }
     @Test
     public void nineShouldSayFizz(){
         FizzBuzz underTest = new FizzBuzz();
         String result = underTest.say(9);
         assertEquals("Fizz", result);
+    }
+    @Test
+    public void tenShouldSayBuzz(){
+        FizzBuzz underTest = new FizzBuzz();
+        String result = underTest.say(10);
+        assertEquals("Buzz", result);
+    }
+    @Test
+    public void elevenShouldSayBuzz(){
+        FizzBuzz underTest = new FizzBuzz();
+        String result = underTest.say(11);
+        assertEquals("Bang", result);
+    }
+    @Test
+    public void twelveShouldSayBuzz(){
+        FizzBuzz underTest = new FizzBuzz();
+        String result = underTest.say(12);
+        assertEquals("Fizz", result);
+    }
+    @Test
+    public void thirteenShouldSayBuzz(){
+        FizzBuzz underTest = new FizzBuzz();
+        String result = underTest.say(13);
+        assertEquals("13", result);
+    }
+    @Test
+    public void fourteenShouldSayBuzz(){
+        FizzBuzz underTest = new FizzBuzz();
+        String result = underTest.say(14);
+        assertEquals("14", result);
+    }
+    @Test
+    public void fifteenShouldSayFizzBuzz(){
+        FizzBuzz underTest = new FizzBuzz();
+        String result = underTest.say(15);
+        assertEquals("FizzBuzz", result);
     }
 }
 
